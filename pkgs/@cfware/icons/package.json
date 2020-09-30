@@ -1,0 +1,23 @@
+{
+	"name": "@cfware/icons",
+	"version": "0.0.0",
+	"description": "Internal @cfware/icons to satisfy peerDependency during development",
+	"author": "Corey Farrell",
+	"private": true,
+	"license": "MIT",
+	"type": "module",
+	"engines": {
+		"node": ">=14.0.0"
+	},
+	"main": "icons.js",
+	"scripts": {
+		"build": "cfware-iconbuilder . icon-chars.js iconChars",
+		"test": "false"
+	},
+	"dependencies": {
+		"@cfware/shadow-element": "^0.15.0"
+	},
+	"devDependencies": {
+		"@cfware/icon-builder": "^0.1.1"
+	}
+}

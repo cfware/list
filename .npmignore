@@ -1,0 +1,4 @@
+*.tgz
+.eslintrc.json
+.github
+pkgs

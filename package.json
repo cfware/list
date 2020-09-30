@@ -1,0 +1,37 @@
+{
+	"name": "@cfware/list",
+	"version": "0.1.0",
+	"description": "List base class",
+	"type": "module",
+	"main": "list.js",
+	"exports": "./list.js",
+	"scripts": {
+		"test": "cfware-lint ."
+	},
+	"engines": {
+		"node": ">=14.0.0"
+	},
+	"author": "Corey Farrell",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cfware/list.git"
+	},
+	"bugs": {
+		"url": "https://github.com/cfware/list/issues"
+	},
+	"homepage": "https://github.com/cfware/list#readme",
+	"dependencies": {
+		"@cfware/button": "^0.1.1",
+		"@cfware/debouncer": "^0.3.3",
+		"@cfware/shadow-element": "^0.15.0",
+		"@cfware/symbols": "^0.1.0"
+	},
+	"peerDependencies": {
+		"@cfware/icons": "*"
+	},
+	"devDependencies": {
+		"@cfware/icons": "file:pkgs/@cfware/icons",
+		"@cfware/lint": "^2.0.3"
+	}
+}

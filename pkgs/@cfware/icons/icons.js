@@ -1,0 +1,32 @@
+import ShadowElement, {html, template, htmlNode, define} from '@cfware/shadow-element';
+
+document.head.append(htmlNode`
+	<style>
+		@font-face {
+			font-family: 'CFWare Icons';
+			font-style: normal;
+			font-weight: 900;
+			font-display: auto;
+			src: url("data:font/woff2;base64,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") format("woff2");
+		}
+	</style>
+`);
+
+class CFWareIcons extends ShadowElement {
+	get [template]() {
+		return html`
+			<style>
+				:host {
+					display: inline;
+					font-family: 'CFWare Icons';
+					font-weight: 900;
+					user-select: none;
+					cursor: default;
+				}
+			</style>
+			${this.textContent}
+		`;
+	}
+}
+
+CFWareIcons[define]('cfware-icons');

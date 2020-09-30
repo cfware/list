@@ -1,0 +1,8 @@
+{
+	"rules": {
+		"import/no-unassigned-import": 0
+	},
+	"env": {
+		"browser": true
+	}
+}
