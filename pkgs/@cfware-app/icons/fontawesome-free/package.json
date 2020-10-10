@@ -22,7 +22,7 @@
   "_resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.14.0.tgz",
   "_shasum": "a371e91029ebf265015e64f81bfbf7d228c9681f",
   "_spec": "@fortawesome/fontawesome-free@^5.14.0",
-  "_where": "/usr/src/npm/@cfware/list/pkgs/@cfware/icons/node_modules/@cfware/icon-builder",
+  "_where": "/usr/src/npm/@cfware/list/pkgs/@cfware-app/icons/node_modules/@cfware/icon-builder",
   "author": {
     "name": "Dave Gandy",
     "email": "dave@fontawesome.com",

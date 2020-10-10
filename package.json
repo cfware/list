@@ -22,16 +22,13 @@
 	},
 	"homepage": "https://github.com/cfware/list#readme",
 	"dependencies": {
-		"@cfware/button": "^0.1.1",
+		"@cfware/button": "^0.2.0",
 		"@cfware/debouncer": "^0.3.3",
 		"@cfware/shadow-element": "^0.15.0",
 		"@cfware/symbols": "^0.1.0"
 	},
-	"peerDependencies": {
-		"@cfware/icons": "*"
-	},
 	"devDependencies": {
-		"@cfware/icons": "file:pkgs/@cfware/icons",
+		"@cfware-app/icons": "file:pkgs/@cfware-app/icons",
 		"@cfware/lint": "^2.0.3"
 	}
 }

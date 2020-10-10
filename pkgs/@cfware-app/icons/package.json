@@ -1,7 +1,7 @@
 {
-	"name": "@cfware/icons",
+	"name": "@cfware-app/icons",
 	"version": "0.0.0",
-	"description": "Internal @cfware/icons to satisfy peerDependency during development",
+	"description": "Internal @cfware-app/icons to satisfy peerDependency during development",
 	"author": "Corey Farrell",
 	"private": true,
 	"license": "MIT",
