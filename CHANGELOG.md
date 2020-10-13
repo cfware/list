@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/cfware/list/compare/v0.2.0...v0.3.0) (2020-10-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade @cfware/button
+
+### Features
+
+* Upgrade @cfware/button ([4bcde12](https://github.com/cfware/list/commit/4bcde122064dde5f46bfcf3db967ac99ec0d6395))
+
 ## [0.2.0](https://github.com/cfware/list/compare/v0.1.0...v0.2.0) (2020-10-10)
 
 
