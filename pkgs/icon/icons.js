@@ -1,4 +1,4 @@
-import ShadowElement, {html, template, htmlNode, define} from '@cfware/shadow-element';
+import ShadowElement, {html, template, htmlNode, define, stringProperties} from '@cfware/shadow-element';
 
 document.head.append(htmlNode`
 	<style>
@@ -12,7 +12,7 @@ document.head.append(htmlNode`
 	</style>
 `);
 
-class CFWareIcons extends ShadowElement {
+class CFWareIcon extends ShadowElement {
 	get [template]() {
 		return html`
 			<style>
@@ -24,9 +24,13 @@ class CFWareIcons extends ShadowElement {
 					cursor: default;
 				}
 			</style>
-			${this.textContent}
+			${this.icon}
 		`;
 	}
 }
 
-CFWareIcons[define]('cfware-icons');
+CFWareIcon[define]('cfware-icon', {
+	[stringProperties]: {
+		icon: ''
+	}
+});
