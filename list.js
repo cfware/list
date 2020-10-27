@@ -166,12 +166,12 @@ export default class CFWareList extends ShadowElement {
 					box-sizing: border-box;
 					border: 1px solid #0001;
 					white-space: nowrap;
-					cursor: default;
 				}
 
 				th {
 					background: #f2f2f2;
 					border: 1px solid #0002;
+					user-select: none;
 				}
 
 				tbody tr:nth-child(2n) {
