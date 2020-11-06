@@ -1,4 +1,4 @@
-import ShadowElement, {html, template, addCleanups, define} from '@cfware/shadow-element';
+import ShadowElement, {html, template, booleanAttribute, addCleanups} from '@cfware/shadow-element';
 import Symbols from '@cfware/symbols';
 import Debouncer from '@cfware/debouncer';
 import '@cfware/button';
@@ -21,6 +21,7 @@ export default class CFWareList extends ShadowElement {
 	_tbody = {};
 
 	// get [listRows]() { return []; }
+	// get [listColumns]() { return []; }
 
 	connectedCallback() {
 		super.connectedCallback();
@@ -91,14 +92,15 @@ export default class CFWareList extends ShadowElement {
 			return html`<cfware-button spacer />`;
 		}
 
+		const disabled = booleanAttribute(button.disabled);
 		if (button.href) {
 			return html`
-				<a tabindex=-1 href=${new URL(button.href, window.location).href} .disabled=${button.disabled}>
-					<cfware-button icon=${button.icon} .disabled=${button.disabled} />
+				<a tabindex=-1 href=${new URL(button.href, window.location).href} disabled=${disabled}>
+					<cfware-button icon=${button.icon} disabled=${disabled} />
 				</a>`;
 		}
 
-		return html`<cfware-button icon=${button.icon} .disabled=${button.disabled} onclick=${() => button.onclick(button)} />`;
+		return html`<cfware-button icon=${button.icon} disabled=${disabled} onclick=${() => button.onclick(button)} />`;
 	}
 
 	[headerButtons]() {
@@ -246,10 +248,5 @@ export default class CFWareList extends ShadowElement {
 				</table>
 			</div>
 		`;
-	}
-
-	static [define](elementName, options) {
-		this.prototype[listColumns] = options[listColumns];
-		super[define](elementName, options);
 	}
 }

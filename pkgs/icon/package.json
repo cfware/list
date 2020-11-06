@@ -14,9 +14,9 @@
 		"prepare": "cfware-iconbuilder . icon-chars.js iconChars"
 	},
 	"dependencies": {
-		"@cfware/shadow-element": "^0.15.0"
+		"@cfware/shadow-element": "^0.16.0"
 	},
 	"devDependencies": {
-		"@cfware/icon-builder": "^0.2.0"
+		"@cfware/icon-builder": "^0.3.0"
 	}
 }
