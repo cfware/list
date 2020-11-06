@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/cfware/list/compare/v0.3.1...v0.4.0) (2020-11-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* Move listColumns with instance property
+
+### Features
+
+* Upgrade @cfware/shadow-element ([ab00bbb](https://github.com/cfware/list/commit/ab00bbb0c83158d97522f7426bc34c7bff2a7cba))
+
 ### [0.3.1](https://github.com/cfware/list/compare/v0.3.0...v0.3.1) (2020-10-30)
 
 
