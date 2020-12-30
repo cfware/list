@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.1](https://github.com/cfware/list/compare/v0.4.0...v0.4.1) (2020-12-30)
+
+
+### Features
+
+* Set className on buttons ([c924e7b](https://github.com/cfware/list/commit/c924e7bb6bc7dc90d482f5aad0ff104b418b1d53))
+
 ## [0.4.0](https://github.com/cfware/list/compare/v0.3.1...v0.4.0) (2020-11-06)
 
 
