@@ -96,11 +96,11 @@ export default class CFWareList extends ShadowElement {
 		if (button.href) {
 			return html`
 				<a tabindex=-1 href=${new URL(button.href, window.location).href} disabled=${disabled}>
-					<cfware-button icon=${button.icon} disabled=${disabled} />
+					<cfware-button class=${button.id} icon=${button.icon} disabled=${disabled} />
 				</a>`;
 		}
 
-		return html`<cfware-button icon=${button.icon} disabled=${disabled} onclick=${() => button.onclick(button)} />`;
+		return html`<cfware-button class=${button.id} icon=${button.icon} disabled=${disabled} onclick=${() => button.onclick(button)} />`;
 	}
 
 	[headerButtons]() {
@@ -196,19 +196,19 @@ export default class CFWareList extends ShadowElement {
 					--focus-background: #99e4;
 				}
 
-				cfware-button[icon=\uF067] {
+				cfware-button.create {
 					--color: #A1CF64;
 					--hover-color: #81BF44;
 					--focus-color: #71AF34;
 				}
 
-				cfware-button[icon=\uF00D] {
+				cfware-button.delete {
 					--color: #D95C5C;
 					--hover-color: #D93C3C;
 					--focus-color: #E92C2C;
 				}
 
-				cfware-button[icon=\uF044] {
+				cfware-button.edit {
 					--color: #6ECFF5;
 					--hover-color: #3EAFF5;
 					--focus-color: #2E9FF5;
