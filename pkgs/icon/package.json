@@ -1,22 +1,22 @@
 {
-	"name": "@cfware-app/icon",
-	"version": "0.0.0",
-	"description": "Internal @cfware-app/icon to satisfy peerDependency during development",
-	"author": "Corey Farrell",
-	"private": true,
-	"license": "MIT",
-	"type": "module",
-	"engines": {
-		"node": ">=14.0.0"
-	},
-	"main": "icons.js",
-	"scripts": {
-		"prepare": "cfware-iconbuilder . icon-chars.js iconChars"
-	},
-	"dependencies": {
-		"@cfware/shadow-element": "^0.16.0"
-	},
-	"devDependencies": {
-		"@cfware/icon-builder": "^0.3.0"
-	}
+    "name": "@cfware-app/icon",
+    "version": "0.0.0",
+    "description": "Internal @cfware-app/icon to satisfy peerDependency during development",
+    "author": "Corey Farrell",
+    "private": true,
+    "license": "MIT",
+    "type": "module",
+    "engines": {
+        "node": ">=18"
+    },
+    "main": "icons.js",
+    "scripts": {
+        "prepare": "cfware-iconbuilder . icon-chars.js iconChars"
+    },
+    "dependencies": {
+        "@cfware/shadow-element": "^1"
+    },
+    "devDependencies": {
+        "@cfware/icon-builder": "^1"
+    }
 }
